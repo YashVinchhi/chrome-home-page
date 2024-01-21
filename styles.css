@@ -1,19 +1,25 @@
 body {
-  margin: 10px ;
-  padding: 10;
+  margin: 10px;
+  padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-direction: row;
   height: 100vh;
   font-family: Arial, sans-serif;
-  background-color: #000000;
-  color: #ff0000;
+  background-image: url(bg.jpg);
+  background-position: center ;
+  background-size: cover;
+  height: 100vh;  
+  display: flex;
+  align-items: center;
+justify-content: center ;
+  color: #fff;
 }
 
+
 header {
-  background: linear-gradient(to right, #02066F, #BD00FF);
-  color: #fff;
+  background: linear-gradient(to right,  #bf474a, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),  #bf474a);
+  color: #bf474a;
   text-align: center;
   padding: 20px;
   position: fixed;
@@ -36,15 +42,14 @@ header img {
 
 #left-half,
 #right-half {
-  width: 50%;
+  width: 70%;
 }
 
 #left-half {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 20px;
+  align-items: left;
+  padding: 1px;
 }
 
 #right-half {
@@ -56,13 +61,14 @@ header img {
 
 table {
   border-collapse: collapse;
-  width: 70%;
+  width: 30%;
 }
 
 th, td {
-  border: 1px solid black;
   padding: 1px;
   text-align: center;
+  border: 1px solid transparent; /* Set initial border to transparent */
+  border-image: linear-gradient(to right, #bf474a, #000000) 1; /* Apply gradient border */
 }
 
 input,
@@ -81,9 +87,9 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   text-decoration: none;
-  background: linear-gradient(to right, #02066F, #BD00FF);
+  background: linear-gradient(to right, #000000, #bf474a, #000000);
   color: #ffffff;
-  border: 2px solid #ffffff;
+  border: 2px solid #976b3e;
   border-radius: 5px;
   transition: transform 0.3s ease-in-out;
   margin: 5px;
@@ -92,7 +98,7 @@ button {
 
 button:hover {
   transform: scale(1.1);
-  box-shadow: 10px 10px 10px #BD00FF, -10px -10px 10px #02066f;
+  box-shadow: 0px 0px 15px #bf474a ;
 }
 
 button:active {
